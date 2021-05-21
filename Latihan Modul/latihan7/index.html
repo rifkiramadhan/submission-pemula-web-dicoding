@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form World</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="contents">
+            <h2 align="center"> Isi data diri</h2>
+            <div class="formContent">
+                <form id="formDataDiri">
+                    <div class="form-element">
+                        <label for="nama">Nama:</label><br>
+                        <input type="text" id="nama" name="nama" placeholder="Nama Anda" required><br>
+                    </div>
+                    <div class="form-element">
+                        <label for="domisili">Domisili:</label><br>
+                        <input type="text" id="domisili" name="domisili" placeholder="Domisili Anda" required><br>
+                    </div>
+                    <div class="form-element">
+                        <input type="submit" value="Submit Data">
+                    </div>
+                </form>
+            </div>
+            <h3 id="messageAfterSubmit"></h3>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

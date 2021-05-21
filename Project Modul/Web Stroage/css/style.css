@@ -1,0 +1,45 @@
+hr{
+    size: 2;
+    height:2px;
+    color:black;
+    background-color:black;
+    width: 95%;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.contents{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.child-content{
+    border: 1px solid black;
+    border-width:2px;
+    padding-bottom: 2%;
+    margin-bottom: 1%;
+}
+
+.form-element{
+    margin:2%;
+}
+
+#user-form{
+    width: 50%;
+    height: 40%;
+}
+
+#user-list{
+    margin-top: 1%;
+    width: 55%;
+}
+
+#instructions-list{
+    margin-left: 1%;
+    margin-right: 1%;
+}
