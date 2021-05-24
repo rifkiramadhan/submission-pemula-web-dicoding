@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #ffb26b;
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+}
+
+.jumbotron {
+	font-size: 20px;
+	padding: 60px;
+	background-color: #939b62;
+	text-align: center;
+	color: white;
+}
+
+.logo {
+    width: 300px;
+}
+
+header {
+	display: inline;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 1.5em;
+	font-family: 'Pacifico', cursive;
+}
+
+div article p {
+    text-align: justify;
+    text-indent: 25px; 
+    text-indent: 50px;
+}
+
+div article table, th, td {
+    border: 1px solid black;
+    table-layout: auto;
+}
+
+.book header {
+	text-align: center;
+}
+
+aside {
+	float: right;
+	width: 25%;
+	padding-left: 20px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: white;
+}
+
+.card-book {
+    transition: transform .3s;
+}
+
+.card-book:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card-sosmed {
+    -webkit-transition: -webkit-transform 1.1s ease-in-out;
+    transition: transform 1.1s ease-in-out;
+}
+
+.card-sosmed:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+#content {
+	float: left;
+	width: 75%;
+}
+
+#keterangan {
+	text-align: center;
+}
+
+#nama {
+	font-weight: bold;
+}
+
+footer {
+	padding: 20px;
+	color: white;
+	background-color: #ff8303;
+	font-weight: bold;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}

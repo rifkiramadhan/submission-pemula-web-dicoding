@@ -1,13 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-li{
-    list-style: none;
-}
-
 body, input, button {
     font-family: 'Open Sans', sans-serif;
 }
@@ -21,16 +11,8 @@ input, button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: cornflowerblue;
+    background-color: #fc5404;
     color: white;
-}
-
-main {
-    max-width: 800px;
-    width: 80%;
-    margin: 0 auto;
-    padding: 16px;
-
 }
 
 .input_section {
@@ -43,7 +25,7 @@ main {
 
 .input_section > h2 {
     text-align: center;
-    color: cornflowerblue;
+    color: #fc5404;
 }
 
 .input_section > form > .input {
@@ -51,7 +33,7 @@ main {
 }
 
 .input_section > form > button {
-    background-color: cornflowerblue;
+    background-color: #fc5404;
     color: white;
     border: 0;
     border-radius: 5px;
@@ -72,10 +54,8 @@ main {
     border-radius: 5px;
 }
 
-
-
 .input_section > form > .input > label {
-    color: cornflowerblue;
+    color: #fc5404;
     font-weight: bold;
 }
 
@@ -86,7 +66,7 @@ main {
 }
 
 .input_section > form > .input_inline > label {
-    color: cornflowerblue;
+    color: #fc5404;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -102,7 +82,7 @@ main {
 }
 
 .search_section > h2 {
-    color: cornflowerblue;
+    color: #fc5404;
 }
 
 .search_section > form {
@@ -124,11 +104,16 @@ main {
 }
 
 .search_section > form > button {
-    background-color: cornflowerblue;
+    background-color: #fc5404;
     color: white;
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.book_list {
+    text-align: center;
+    font-size: 12px;
 }
 
 .book_shelf {
@@ -136,28 +121,31 @@ main {
     border: 1px solid black;
     padding: 16px;
     border-radius: 10px;
+    list-style: none;
 }
 
 .book_shelf > h2 {
-    color: cornflowerblue;
+    color: #fc5404;
+    font-size: 18px;
+    text-align: center;
 }
 
 .book_shelf > .book_list {
     padding: 16px;
 }
 
-.book_shelf > .book_list > li > .book_item {
+.book_shelf > .book_list > .book_item {
     padding: 8px 16px 16px 16px;
-    border: 1px solid black;
     border-radius: 5px;
     margin: 10px 0;
 }
 
-.book_shelf > .book_list > li > .book_item > h3, p {
+.book_shelf > .book_list > .book_item > h3, p {
     margin: 8px 0;
+    font-size: 10px;
 }
 
-.book_shelf > .book_list > li > .book_item > .action > button {
+.book_shelf > .book_list > .book_item > .action > button {
     border: 0;
     padding: 5px;
     margin: 0 5px 0 0;
@@ -165,12 +153,28 @@ main {
     cursor: pointer;
 }
 
-.book_shelf > .book_list > li > .book_item > .action > .green {
-    background-color: darkgreen;
-    color: white;
+.green {
+    background-color: #81b214;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: none;
+    cursor: pointer;
+    border: 0;
 }
 
-.book_shelf > .book_list > li > .book_item > .action > .red {
-    background-color: darkred;
-    color: white;
+.green:hover {
+    background-color: #ffcc29;
+}
+
+.red {
+    background-color: #ce1212;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: none;
+    cursor: pointer;
+    border: 0;
+}
+
+.red:hover {
+    background-color: #f58634;
 }

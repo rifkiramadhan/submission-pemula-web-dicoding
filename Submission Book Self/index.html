@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookshelf Apps</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="head_bar">
-      <h1 class="head_bar__title">Bookshelf Apps</h1>
-    </header>
-    <main>
-      <section class="input_section">
+
+    <link rel="shortcut icon" href="assets/img/books-icon.png">
+
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/content_book.css">
+    <link rel="stylesheet" href="css//nav.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<header>
+	<div class="jumbotron" id="jumbotron">
+		<h1>Bookshelf Apps</h1>
+		<br>
+        <marquee direction="up" scrollamount="2" behavior="alternate" width="90%"><marquee direction="left"> Berikut ini adalah sistem penyimpanan buku digital sderhana.</marquee></marquee>
+    </div>
+    <nav>
+        <div class="logo">
+            <a href="#jumbotron"><img src="assets/img/books-icon.png" width="40px" alt=""></a>
+        </div>
+
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#dibaca">Dibaca</a></li>
+            <li><a href="#selesai">Selesai</a></li>
+            <li><a href="#cari">Cari</a></li>
+            <li><a href="assets/feature/login.html">Masuk</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox" name="" id="">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<main>
+	<div id="content">
+
+    <article id="cari" class="card">
+			<section class="search_section">
+        <h2>Cari Buku (Optional)</h2>
+        <form id="searchBook">
+            <label for="searchBookTitle">Judul</label>
+            <input id="searchBookTitle" type="text">
+            <button id="searchSubmit" onclick="myFunction()" type="submit">Cari</button>
+        </form>
+     </section>
+		</article>
+
+		<article id="cari" class="card">
+			<section class="input_section">
         <h2>Masukkan Buku Baru</h2>
         <form id="inputBook">
           <div class="input">
@@ -40,27 +76,41 @@
             <input name="isComplete" id="inputBookIsComplete" type="checkbox" />
           </div>
           <button id="bookSubmit" type="submit">
-            Masukkan Buku ke rak <span>Belum selesai dibaca</span>
+            Masukkan Buku ke rak<span>Belum selesai dibaca</span>
           </button>
         </form>
       </section>
-      <section class="search_section">
-        <h2>Cari Buku (Opsional)</h2>
-        <form id="searchBook">
-          <label for="searchBookTitle">Judul</label>
-          <input id="searchBookTitle" type="text" />
-          <button id="searchSubmit" type="submit">Cari</button>
-        </form>
-      </section>
-      <section class="book_shelf">
-        <h2>Belum selesai dibaca</h2>
-        <div id="incompleteBookshelfList" class="book_list"></div>
-      </section>
-      <section class="book_shelf">
-        <h2>Selesai dibaca</h2>
-        <div id="completeBookshelfList" class="book_list"></div>
-      </section>
-    </main>
+    </article>
+  </div>
+
+    <aside>
+      <article id="dibaca" class="book card card-book">
+        <section class="book_shelf">
+          <h2>Sedang dibaca</h2>
+  
+          <div id="incompleteBookshelfList" class="book_list">
+
+          </div>
+        </section>
+      </article>
+
+      <article id="selesai" class="card card-book">
+        <section class="book_shelf">
+          <h2>Selesai dibaca</h2>
+  
+          <div id="completeBookshelfList" class="book_list">
+  
+          </div>
+        </section>
+		  </article>
+	</aside>
+</main>
+
+    <footer>
+        <p id="keterangan">Submission Dicoding Front-End Web Untuk Pemula &#169; 2021.</p>
+    </footer>
+
     <script src="js/main.js"></script>
-  </body>
+    <script src="js/nav.js"></script>
+</body>
 </html>
