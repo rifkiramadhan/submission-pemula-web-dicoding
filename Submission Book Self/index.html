@@ -43,65 +43,66 @@
 
 <main>
 	<div id="content">
-
     <article id="cari" class="card">
-			<section class="search_section">
-        <h2>Cari Buku (Optional)</h2>
-        <form id="searchBook">
-            <label for="searchBookTitle">Judul</label>
-            <input id="searchBookTitle" type="text">
-            <button id="searchSubmit" onclick="myFunction()" type="submit">Cari</button>
+			<div id="searchBox" class="box">
+        <form class="form" action="#" id="formSearch">
+            <input type="text" id="search" name="search" placeholder="Silahkan Cari Data Buku (Judul, Tahun, Penulis)">
+            <input type="submit" id="submitSearch" value="Cari">
         </form>
-     </section>
+    </div>
 		</article>
 
-		<article id="cari" class="card">
+		<article class="card">
 			<section class="input_section">
-        <h2>Masukkan Buku Baru</h2>
-        <form id="inputBook">
-          <div class="input">
-            <label for="inputBookTitle">Judul</label>
-            <input name="title" id="inputBookTitle" type="text" required />
+        <div id="container">
+          <div id="inputBook" class="box">
+              <div class="title">
+                  <h2>Masukkan Data Buku</h2>
+              </div>
+              <div class="bodyInput">
+                  <form class="form" action="#" id="formBook">
+                      <div class="rowFull">
+                          <label for="bookTitle">Judul Buku</label>
+                          <input type="text" id="bookTitle" class="input" name="bookTitle" required>
+                      </div>
+                      <div class="row">
+                          <div class="col colRight">
+                              <label for="author">Nama Penulis</label>
+                              <input type="text" id="author" class="input" name="author" required>
+                          </div>
+                          <div class="col">
+                              <label for="year">Tahun Terbit</label>
+                              <input type="number" id="year" class="input" name="year" required>
+                          </div>
+                      </div>
+                      <div class="rowFull checkbox">
+                          <label for="read">Selesai Dibaca</label>
+                          <input type="checkbox" id="read" name="read">
+                      </div>
+                      <input type="submit" id="submit" value="Simpan Buku">
+                  </form>
+              </div>
           </div>
-          <div class="input">
-            <label for="inputBookAuthor">Penulis</label>
-            <input name="author" id="inputBookAuthor" type="text" required />
-          </div>
-          <div class="input">
-            <label for="inputBookYear">Tahun</label>
-            <input name="year" id="inputBookYear" type="number" required />
-          </div>
-          <div class="input_inline">
-            <label for="inputBookIsComplete">Selesai dibaca</label>
-            <input name="isComplete" id="inputBookIsComplete" type="checkbox" />
-          </div>
-          <button id="bookSubmit" type="submit">
-            Masukkan Buku ke rak<span>Belum selesai dibaca</span>
-          </button>
-        </form>
-      </section>
     </article>
   </div>
 
     <aside>
-      <article id="dibaca" class="book card card-book">
-        <section class="book_shelf">
-          <h2>Sedang dibaca</h2>
-  
-          <div id="incompleteBookshelfList" class="book_list">
-
+      <article id="dibaca" class="card card-book">
+        <div id="unCompleteRead" class="box">
+          <div class="title">
+              <h2>Belum Selesai Di Baca</h2>
           </div>
-        </section>
+          <div id="bodyUnComplete"></div>
+        </div>
       </article>
 
       <article id="selesai" class="card card-book">
-        <section class="book_shelf">
-          <h2>Selesai dibaca</h2>
-  
-          <div id="completeBookshelfList" class="book_list">
-  
+        <div id="completeRead" class="box">
+          <div class="title">
+              <h2>Selesai Di Baca</h2>
           </div>
-        </section>
+          <div id="bodyComplete"></div>
+        </div>
 		  </article>
 	</aside>
 </main>
@@ -110,7 +111,10 @@
         <p id="keterangan">Submission Dicoding Front-End Web Untuk Pemula &#169; 2021.</p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/search.js"></script>
     <script src="js/nav.js"></script>
 </body>
 </html>
