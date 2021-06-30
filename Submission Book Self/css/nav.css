@@ -52,6 +52,16 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a.masuk.material-icons {
+    width: 50px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #064420;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
 
 /* 
  * Hamburger Menu 

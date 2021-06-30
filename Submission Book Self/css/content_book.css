@@ -64,12 +64,12 @@ input.input {
     top: 7px;
 }
 
-#submit {
+input.material-icons, #submit {
     width: 100%;
-    height: 35px;
+    height: 50px;
     margin-top: 10px;
     font-size: 18px;
-    background-color: rgb(58, 58, 189);
+    background-color: #064420;
     color: whitesmoke;
     border-radius: 15px;
     cursor: pointer;
@@ -126,31 +126,29 @@ input.input {
     line-height: 50px;
 }
 
-.bookButton .doneReadBtn {
+button.material-icons, .bookButton .doneReadBtn {
     width: 75px;
-    height: 25px;
+    height: 50px;
     margin-right: 5px;
     border-radius: 10px;
-    background-color: rgb(98, 207, 25);
+    background-color: #064420;
     color: #fff;
     cursor: pointer;
 }
 
-.bookButton .unReadBtn {
+button.material-icons, .bookButton .unReadBtn {
     width: 75px;
-    height: 25px;
+    height: 50px;
     margin-right: 5px;
     border-radius: 10px;
-    background-color: rgb(82, 109, 231);
     color: #fff;
     cursor: pointer;
 }
 
-.bookButton .deleteBtn {
+button.material-icons, .bookButton .deleteBtn {
     width: 75px;
-    height: 25px;
+    height: 50px;
     border-radius: 10px;
-    background-color: rgb(218, 69, 24);
     color: #fff;
     cursor: pointer;
 }

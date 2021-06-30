@@ -53,19 +53,19 @@ const createButton = (buttonName, buttonTypeClass , eventListener) => {
 }
 
 const createDoneReadBtn = () => {
-  return createButton("Selesai","doneReadBtn", (event) => {
+  return createButton("check_circle","doneReadBtn" && "material-icons", (event) => {
       readCompleted(event.target.parentElement.parentElement);
   });
 }
 
 const createUnReadBtn = () => {
-  return createButton("Baca","unReadBtn", (event) => {
+  return createButton("chrome_reader_mode","unReadBtn" && "material-icons", (event) => {
       undoFromReadCompleted(event.target.parentElement.parentElement);
   });
 }
 
 const deleteDataBookBtn = () => {
-  return createButton("Hapus","deleteBtn", (event) => {
+  return createButton("delete","deleteBtn" && "material-icons", (event) => {
       deleteDataBook(event.target.parentElement.parentElement);
   });
 }

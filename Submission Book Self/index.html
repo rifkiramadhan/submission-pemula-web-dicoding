@@ -10,8 +10,10 @@
 
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/content_book.css">
-    <link rel="stylesheet" href="css//nav.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <header>
 	<div class="jumbotron" id="jumbotron">
@@ -29,7 +31,7 @@
             <li><a href="#dibaca">Dibaca</a></li>
             <li><a href="#selesai">Selesai</a></li>
             <li><a href="#cari">Cari</a></li>
-            <li><a href="assets/feature/login.html">Masuk</a></li>
+            <li><a class="masuk material-icons" href="assets/feature/login.html">open_in_browser</a></li>
         </ul>
 
         <div class="menu-toggle">
@@ -43,48 +45,51 @@
 
 <main>
 	<div id="content">
-    <article id="cari" class="card">
-			<div id="searchBox" class="box">
-        <form class="form" action="#" id="formSearch">
-            <input type="text" id="search" name="search" placeholder="Silahkan Cari Data Buku (Judul, Tahun, Penulis)">
-            <input type="submit" id="submitSearch" value="Cari">
-        </form>
-    </div>
-		</article>
+        <article id="cari" class="card">
+            <div id="searchBox" class="box">
+                <form class="form" action="#" id="formSearch">
+                    <input type="text" id="search" name="search" placeholder="Silahkan Cari Data Buku (Judul, Tahun, Penulis)">
+                    <input type="submit" id="submitSearch" class="material-icons" value="search">
+                </form>
+            </div>
+        </article>
 
-		<article class="card">
-			<section class="input_section">
-        <div id="container">
-          <div id="inputBook" class="box">
-              <div class="title">
-                  <h2>Masukkan Data Buku</h2>
-              </div>
-              <div class="bodyInput">
-                  <form class="form" action="#" id="formBook">
-                      <div class="rowFull">
-                          <label for="bookTitle">Judul Buku</label>
-                          <input type="text" id="bookTitle" class="input" name="bookTitle" required>
-                      </div>
-                      <div class="row">
-                          <div class="col colRight">
-                              <label for="author">Nama Penulis</label>
-                              <input type="text" id="author" class="input" name="author" required>
-                          </div>
-                          <div class="col">
-                              <label for="year">Tahun Terbit</label>
-                              <input type="number" id="year" class="input" name="year" required>
-                          </div>
-                      </div>
-                      <div class="rowFull checkbox">
-                          <label for="read">Selesai Dibaca</label>
-                          <input type="checkbox" id="read" name="read">
-                      </div>
-                      <input type="submit" id="submit" value="Simpan Buku">
-                  </form>
-              </div>
-          </div>
-    </article>
-  </div>
+        <article class="card">
+            <section class="input_section">
+                <div id="container">
+                    <div id="inputBook" class="box">
+                        <div class="title">
+                            <h2>Masukkan Data Buku</h2>
+                        </div>
+                        <div class="bodyInput">
+                            <form class="form" action="#" id="formBook">
+                                <div class="rowFull">
+                                    <label for="bookTitle">Judul Buku</label>
+                                    <input type="text" id="bookTitle" class="input" name="bookTitle" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col colRight">
+                                        <label for="author">Nama Penulis</label>
+                                        <input type="text" id="author" class="input" name="author" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="year">Tahun Terbit</label>
+                                        <input type="number" id="year" class="input" name="year" required>
+                                    </div>
+                                </div>
+                                <div class="rowFull checkbox">
+                                    <label for="read">Selesai Dibaca</label>
+                                    <input type="checkbox" id="read" name="read">
+                                </div>
+                                <input type="submit" class="material-icons" id="submit" value="add_circle">
+            
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
 
     <aside>
       <article id="dibaca" class="card card-book">
@@ -103,7 +108,7 @@
           </div>
           <div id="bodyComplete"></div>
         </div>
-		  </article>
+	  </article>
 	</aside>
 </main>
 
