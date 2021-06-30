@@ -1,4 +1,7 @@
-/* Responsive Layout */
+/* 
+ * Responsive Layout
+ */
+
 @media screen and (max-width: 1000px) {
 	#content, 
 	aside {
@@ -7,19 +10,24 @@
 	}
 }
 
-
 /* 
  *Navbar 
  */
 
-/* Ukuran Tablet */
+/* 
+ * Ukuran Tablet
+ */
+
 @media screen and (max-width: 768px) {
     nav ul {
         width: 50%;
     }
 }
 
-/* Ukuran Mobile */
+/* 
+ * Ukuran Mobile 
+ */
+
 @media screen and (max-width: 576px) {
     .menu-toggle {
         display: flex;

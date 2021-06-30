@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("onSaveDatas", () => {
-    console.log("Data berhasil disimpan.");
+    console.log("Buku Anda berhasil disimpan.");
 });
 
 document.addEventListener("onLoadDatas", () => {

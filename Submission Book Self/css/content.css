@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
 
+/* 
+ * Content
+ */
+
 * {
 	box-sizing: border-box;
 }
@@ -72,22 +76,12 @@ aside {
 }
 
 .card-book {
-    transition: transform .3s;
+    transition: transform .6s;
 }
 
 .card-book:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.4);
-}
-
-.card-sosmed {
-    -webkit-transition: -webkit-transform 1.1s ease-in-out;
-    transition: transform 1.1s ease-in-out;
-}
-
-.card-sosmed:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
 }
 
 #content {

@@ -2,10 +2,6 @@
  * Navbar
  */
 
-* {
-    margin: 0;
-}
-
 nav li {
 	display: inline;
 	list-style-type: none;
@@ -96,7 +92,10 @@ nav ul li a.masuk.material-icons {
     z-index: 1;
 }
 
-/* Hamburger Menu Animation */
+/* 
+ * Hamburger Menu Animation 
+ */
+ 
 .menu-toggle span:nth-child(2) {
     transform-origin: 0 0;
 }

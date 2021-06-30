@@ -53,21 +53,28 @@ const createButton = (buttonName, buttonTypeClass , eventListener) => {
 }
 
 const createDoneReadBtn = () => {
-  return createButton("check_circle","doneReadBtn" && "material-icons", (event) => {
+  return createButton("check_circle", "doneReadBtn" && "material-icons", (event) => {
       readCompleted(event.target.parentElement.parentElement);
   });
 }
 
 const createUnReadBtn = () => {
-  return createButton("chrome_reader_mode","unReadBtn" && "material-icons", (event) => {
+  return createButton("chrome_reader_mode", "unReadBtn" && "material-icons", (event) => {
       undoFromReadCompleted(event.target.parentElement.parentElement);
   });
 }
 
 const deleteDataBookBtn = () => {
-  return createButton("delete","deleteBtn" && "material-icons", (event) => {
-      deleteDataBook(event.target.parentElement.parentElement);
-  });
+    return createButton("delete", "deleteBtn" && "material-icons", (event) => {
+
+    var yakin = confirm("Apakah Anda yakin akan meghapus buku ini ?");
+    if (yakin) {
+        deleteDataBook(event.target.parentElement.parentElement);
+         alert("Buku Anda telah dihapus");
+      } else {
+          alert("Buku Anda tidak dihapus");
+      } 
+  });  
 }
 
 const readCompleted = (taskElement) => {
