@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #00C1D4;}
+
+main {
+	padding: 20px;
+	overflow: auto;
+}
+
+aside {
+    overflow-y: scroll;
+	float: right;
+	width: 35%;
+    border-radius: 15px;
+    height: 900px;
+	padding-left: 20px;
+}

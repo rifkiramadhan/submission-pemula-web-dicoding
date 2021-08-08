@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf</title>
+
+    <!-- My Icon -->
+    <link rel="shortcut icon" href="assets/img/icon-book.png">
+
+    <!-- My Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/jumbotron.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/content.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- My Materialize Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<header class="head_bar">
+    <div class="jumbotron" id="jumbotron">
+        <marquee direction="up" height="25"><hr></marquee><br>
+		<h1>Bookshelf</h1>
+        <marquee direction="down" height="25"><hr></marquee>    
+    </div>
+
+    <nav>
+        <div class="logo">
+            <a href="#jumbotron"><img src="assets/img/icon-book.png" width="40px" alt=""></a>
+        </div>
+
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#dibaca">Dibaca</a></li>
+            <li><a href="#selesai">Selesai</a></li>
+            <li><a href="#cari">Cari</a></li>
+            <li><a class="login" href="#">Login</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox" name="" id="">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div id="content">
+        <section id="cari" class="search_section">
+              <img src="assets/img/undraw_reading_time_gvg0.svg" alt="Gambar Sticker Buku">
+              <form id="searchBook">
+                  <input id="searchBookTitle" type="text" placeholder="Cari Buku">
+                  <button id="searchSubmit" class="material-icons" type="submit">search</button>
+              </form>
+          </section>
+      
+          <section class="input_section">
+              <h2>Masukkan Buku Baru</h2>
+              <form id="inputBook">
+                  <div class="input">
+                      <label for="inputBookTitle">Judul</label>
+                      <input id="inputBookTitle" type="text" placeholder="Ex: Kangen" required>
+                  </div>
+                  <div class="input">
+                      <label for="inputBookAuthor">Penulis</label>
+                      <input id="inputBookAuthor" type="text" placeholder="Ex: Rifki" required> 
+                  </div>
+                  <div class="input">
+                      <label for="inputBookYear">Tahun</label>
+                      <input id="inputBookYear" type="number" placeholder="Ex: 2021" required>
+                  </div>
+                  <div class="input_inline">
+                      <label for="inputBookIsComplete" id="completed">Selesai dibaca</label>
+                      <input id="bookChecked" type="checkbox">
+                  </div>
+                  <button id="bookSubmit" class="material-icons" type="submit">add_circle</button>
+              </form>
+          </section>
+      
+          <section class="book_shelf" id="incompletebook">
+              <h2 id="dibaca" >Selesai dibaca</h2>
+      
+              <article id="incompleteBookshelfList" class="book_list">
+              
+              </article>
+          </section>
+    </div>
+
+    <aside>
+        <section class="book_shelf" id="completebook">
+            <h2 id="selesai">Belum selesai dibaca</h2>
+    
+            <article id="completeBookshelfList" class="book_list">
+    
+            </article>
+        </section>
+    </aside>
+</main>
+
+    <footer>
+        <p id="keterangan">Submission Pemula &#169; 2021.</p>
+    </footer>
+
+    <!-- My Javascript -->
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/dom.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

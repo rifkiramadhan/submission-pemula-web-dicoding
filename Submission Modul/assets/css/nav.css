@@ -10,12 +10,12 @@ nav li {
 
 nav {
     display: flex;
-    background-color: #ff8303;
-    justify-content: space-around;
+    background-color: #2C394B;
+    justify-content: space-between;
     color: lightblue;
     height: 50px;
     align-items: center;
-    padding: 5px;
+    padding: 20px;
 	position: sticky;
 	top: 0;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
@@ -48,14 +48,18 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a.masuk.material-icons {
-    width: 50px;
+nav ul li a.login {
+    padding: 5px;
     text-align: center;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
-    background-color: #064420;
+    background-color: #0F52BA;
     border: 1px solid white;
     border-radius: 50px;
+}
+
+nav ul li a.login:hover {
+    background-color: navy;
 }
 
 

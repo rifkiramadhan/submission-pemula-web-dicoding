@@ -1,0 +1,299 @@
+#content {
+	float: left;
+	width: 65%;
+}
+
+.book-item{
+    padding: 15px 15px 7px 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px 13px 10px 15px;
+    box-shadow: 0 5px 10px 0 rgba(46, 4, 71, 0.048);
+    border-radius: 15px;
+}
+
+.search_section {
+    display: flex;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+	background-color: white;
+}
+
+#searchBook #searchBookTitle {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+}
+
+#searchBook #searchSubmit {
+    width: 50%;
+    height: 35px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search_section img {
+    margin-left: 25px;
+    width: 300px;
+    height: 300px;
+}
+
+.search_section > h2 {
+    color: rgb(140, 106, 233);
+    padding: 10px;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: rgb(140, 106, 233);
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.card-read {
+    overflow-y: scroll;
+    height: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: white;
+}
+
+input, button {
+    font-size: 15px;
+}
+
+input{
+    border: 2px solid rgb(140, 106, 233) !important;
+}
+
+.input {
+    padding: 7px;
+}
+
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    border: transparent;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: black;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: rgb(140, 106, 233);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+
+.input_section > form > .input > label {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: black;
+    font-weight: bold;
+    margin: 7px;
+}
+
+.input_section, .book_shelf, .search_section{
+    background-color: white !important;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    /*box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.034);*/
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > h2 {
+    text-align: center;
+    color: black;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: transparent;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;
+}
+
+.search_section > form > label {
+    font-weight: bold;
+    color: black;
+}
+
+form > button:hover {
+    background-color: rgb(91, 64, 160);
+    color: white;
+};
+
+
+.book-item > h4 {
+    padding-top: 10px;
+}
+
+.book-item > h2 {
+    color: black;
+    padding-top: 7px;
+}
+
+.green-button, .done-button {
+    background-color: rgb(54, 199, 54);
+}
+
+.green-button, .red-button, .undo-button, .done-button {
+    font-size: 13px;
+    color: white;
+    margin: 3px 10px 20px 0;
+    padding: 10px;
+    border-radius: 6px;
+    align-items: center;
+    border: transparent;
+}
+
+.undo-button {
+    background-color: rgb(143, 74, 53);
+}
+
+button.material-icons {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: #0F52BA;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+button.material-icons:hover {
+    background-color: navy;
+}
+
+.author-container > h4, .year-container > p {
+    display: inline;
+}
+
+.author-container {
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.year-container {
+    margin-bottom: 10px;
+}
+
+.edit-button {
+    background: url(../img/edit_black_24dp.svg);
+    background-size: contain;
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    float: right;
+    margin-right: 20px;
+}
+
+.year-container, .author-container, .title, .buttons {
+    margin: 7px 13px 0 20px;
+}
+
+.title {
+    color: black;
+}
+
+.edit-button, .done-button {
+    margin-top: 15px;
+}
+
+.green-button, .red-button, .undo-button {
+    margin-top: 20px;
+}
