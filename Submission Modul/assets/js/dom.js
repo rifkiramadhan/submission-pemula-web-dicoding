@@ -115,7 +115,7 @@ button.classList.add('buttons');
 const makeUndoButton = () => {
     return createButton("undo-button" && "material-icons", (event) => {
         undoBookFromComplete(event.target.parentElement.parentElement);
-    }, "bookmark_border");
+    }, "bookmark");
 };
 
 const makeRemoveButton = () => {
@@ -132,7 +132,7 @@ const makeFinishButton = () => {
     return createButton("green-button" && "material-icons", (event) => {
          addBookToComplete(event.target.parentElement.parentElement);
         updateBookToStorage()
-    }, "bookmark");
+    }, "bookmark_border");
 
 };
 
